@@ -1,0 +1,29 @@
+.wrapper {
+    display: grid;
+    /* l'unité fr représente une fraction de l'espace disponible 
+    dans le conteneur de la grille 
+    L'espace disponible est divisé en quatre. 
+    Les deux premières fractions sont allouées à la première 
+    colonne, et chacune des colonnes suivante 
+    dispose d'une fraction.*/
+    grid-template-columns: 2fr 1fr 1fr;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-auto-rows: 200px;
+}
+
+.wrapper>div {
+    border: 1px solid #0000ff;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}

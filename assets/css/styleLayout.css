@@ -1,0 +1,56 @@
+/* @font-face{
+    font-family: police;
+    src:url('../fonts/Dreamline2.otf');
+    font-size: small;
+} */
+
+body {
+    margin: 0;
+    margin-top: 0;
+    font-family: 'police';
+    font-size: small;
+}
+
+header, nav, aside, section, footer, article {
+    display: block;
+}
+
+h1{
+    margin-top: 0;
+
+}
+
+header {
+    background-color:red;
+    
+}
+*{
+    margin:0;
+}
+section {
+    height: 300px;
+    background-color:aqua;
+    float: left;
+    width: 90%;
+    
+}
+
+ article {
+    height: 200px;
+    float: right;
+    background-color: yellow;
+    width: 20%;
+} 
+
+aside {
+    height: 300px;
+    float: right;
+    width: 10%;
+    background-color:yellow;
+    
+}
+
+footer {
+    clear: both;
+    background-color:greenyellow;
+}

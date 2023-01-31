@@ -1,0 +1,40 @@
+.test{
+    color: rgb(9, 3, 22);
+}
+.test2{
+    color:rgb(1, 14, 10)
+}
+
+.test3{color:blueviolet
+}
+.test4{background-color:bisque
+}
+*{
+    margin: 0;
+    
+}
+.horizontal{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(32, 105, 168);
+}
+
+.horizontal .link{
+    float: left;
+}
+
+.horizontal .link a{
+    display: block;
+    color:black;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;  
+}
+
+.horizontal .link a:hover{
+    background-color: #555;
+    color: white;
+}

@@ -1,0 +1,29 @@
+.conteneur {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enfant {
+    flex-basis: 200px;
+    background-color: yellow;
+}
+
+p {
+    color: blue;
+}
+/* Nouvelles règles si la fenêtre fait au plus de 800px de large */
+@media (max-width: 800px) {
+    .conteneur {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 500px;
+    }
+    .enfant {
+        background-color: rgb(0, 110, 255);
+        padding: 5px
+    } 
+
+    p {
+        color: red;
+    }

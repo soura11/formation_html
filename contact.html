@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/cssbootsrap/bootstrap.css"/>
+</head>
+<body>
+
+             <!-- FORMULAIRE  -->
+            
+             <form action="mailto:bertrand.oscar@oracle.fr" method="POST">
+                <fieldset>
+                    <legend>Formualire</legend>
+                    
+                <div class="mb-3">           
+                    <label for="email" class="form-label">Email</label><br>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Votre Email" required/>       
+                </div>
+                <div class="mb-3">           
+                    <label for="password" class="form-label">Mot de passe</label><br>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Votre Password" required/>
+                </div>
+
+                <div class="mb-3">           
+                    <label for="age" class="form-label">Age</label><br>
+                    <input type="number" class="form-control" name="Votre age" id="age" placeholder="Votre Age" required/>
+                </div>
+
+                <div class="mb-3">           
+                    <label for="date" class="form-label">Date</label><br>
+                    <input type="datetime-local" class="form-control" name="date" id="date" required/>
+                </div>
+
+                <div class="form-check form-check-inline" >           
+                    <input type="radio" class="form-check-input" name="fav" id="masulin" required/>
+                    <label for="Masculin" class="form-check-label">Masculin</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="fav" id="feminin" required/>
+                    <label for="Feminin" class="form-check-label">Feminin</label>
+                </div><br>
+                <div class="mb-3">           
+                    <label for="Pays" class="form-label">Pays</label><br>
+                    <input type="text" class="form-control" name="Pays" id="pays" required/>
+                </div>
+                <label for="choix">Selectionnez ...</label><br>
+                <select name="choix" id="choix" class="form-select" required>
+                <option selected>Open this select menu</option>
+                <option value="choix1">choix 1</option>
+                <option value="choix1">choix 2</option>
+                <option value="choix1">choix 3</option>
+                </select><br>
+                <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="reset" class="btn btn-danger">Clear</button>
+                </div>
+
+    </fieldset>
+    
+    </form>
+
+
+    <a class="test" name = "signet" >
+        Je suis le signet de la page index
+    </a>
+    <hr>
+    <img src="assets/images/cat-g1e3bdae09_1920.jpg" alt="le chat" style="width:300px; display:block;margin:auto;">
+
+    <form action="mailto:bertrand.oscar@oracle.fr" method="POST"></form>
+
+    <!-- IMBRICATION D UNE TABLE POUR UN FORMULAIRE -->
+
+    <table border="0" >
+        <tr>
+            <td align="left"> 
+                <label for="name" /> Entrez votre nom </label>
+            </td>
+            <td align="center"> 
+                <input type="text" name="name" />
+            </td>
+        </tr>
+        <tr>
+            <td align="left"> 
+                <label for="name" /> Entrez votre adresse-email </label>
+            </td>
+            <td align="center"> 
+                <input type="text" name="name" />
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <label for="client">Etes-vous client de la fnac ?</label>
+            </td>
+            <td>
+                <label for="OUI" />OUI</label>
+                <input type="radio" id="oui" name="fav" value="oui" />
+                <label for="NON" />NON</label>
+                <input type="radio" id="non" name="fav" value="non" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Envoyer" />
+            </td>
+            <td>
+                <input type="reset" value="Annuler" />
+            </td>  
+        </tr>
+    </table>
+
+
+</body>
+</html>
